@@ -6,6 +6,9 @@
             <li ng-click="ctrl.chatHistory(user.email)">{{user.username}}</li>
         </ul>
     </div>
+
+
+    
     <div class="messageArea" ng-if="ctrl.flag">
         <div class="chatHistory" id="chatWindow">
             <ul class="messages" ng-repeat="msg in ctrl.messagesPacket track by $index" type="none">
@@ -16,4 +19,4 @@
         <textarea rows="2" cols="70" type="text" ng-model="ctrl.textArea" placeholder="Enter messages here "></textarea>
         <button ng-click="ctrl.send(ctrl.textArea)">send</button>
     </div>
-</div>
+</div>`
